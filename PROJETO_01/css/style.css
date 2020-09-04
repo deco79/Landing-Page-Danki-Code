@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.clear{
+	clear: both;
+}
+
 body{
     width: auto;
     height: 100%;
@@ -23,13 +27,24 @@ body{
 }
 
 .center{
-	width: auto;
+	width: 100%;
 	height: 600px;
 	background-image: url('../imagens/header.png');
-	background-size: 100% auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-.center li{
+.lista{
+	width: 600px;
+	height: 300px;
+	background-color: rgba(32, 32, 96,0.3);	
+	float: left;
+	margin: 150px 30px;
+	
+}
+
+.lista li{ 
 	margin-bottom: 30px;
 	font-size: 20px;
 	font-family: 'Times New Roman',sans-serif;
@@ -37,29 +52,22 @@ body{
 	color: white;
 }
 
-.center ul{
-	top: 170px;
-	left: 100px;
-	position: absolute;
-	width: 600px;
-	height: 300px;
-	background-color: rgba(32, 32, 96,0.3);
+.lista ul{
+	list-style-position: inside;
 	padding: 50px;
-	list-style: disc;
-	
 }
 
 
 form{
-	padding: 10px;
-	top: 50px;
 	right: 30px;
-	position: absolute;
+	bottom: 30px;
+	position: relative;
+	padding: 10px;
+	float: right;
 	border: 10px solid gray;
 	background-color: white;
 	width: 450px;
 	height: 650px;
-	margin: auto;
 	text-align: center;
 }
 
@@ -107,36 +115,38 @@ form input[type=submit]{
 }
 
 .medio{
+	text-align: center;
 	margin-top: -5px;
-	width: auto;
-	height: 300px;
 	background-color: rgb(209, 209, 224);
 }
 
 .medio h2{
 	padding-top: 40px;
-	text-align: center;
+	font-weight: normal;
 	font-size: 30px;
 	color: rgb(62, 62, 91);
 }
 
 .medio p{
-	margin: 20px auto;
-	display: block;
-	color: rgb(62, 62, 91)
-	border: 1px solid black;
+	padding: 30px;
+	width: 100%;
+	max-width: 768px;
+	color: rgb(62, 62, 91);
 	font-size: 18px;
-	padding: 5px;
-	width: 700px;
-	height: 250px;
 	text-align: justify;
+	display: inline-block;
+
 
 }
 
-#seta{
- 	position: absolute;
- 	top: 930px;
- 	left: 580px;
+.seta{
+	position: relative;
+	height: 40px;
+	width: 40px;
+	left: 50%;
+	top: 20px;
+	background-image: url('../imagens/arrow.png');
+	background-size: contain;
  }
 
  .final > h2{
@@ -192,4 +202,41 @@ footer h3{
 	font-style: italic;
 	color: rgb(77, 51, 153);
 	font-size: 25px;
+}
+
+@media screen and (max-width: 1024px){
+
+	.header1{
+		height: auto;
+		width: 100%;
+		text-align: left;
+	}
+	
+	.center{
+		width: 100%;
+		height: auto;
+		padding: 40px 2%;
+		text-align: center;
+		
+	}
+
+	.lista{
+		width: 90%;
+		height: auto;
+		float: none;
+		max-width: 400px;
+		padding: 20px;
+			
+		
+	}
+	
+	.form{
+	max-width: 300px;	
+	float: none;
+	width: 60%;
+	height: 100%;
+		
+	}
+
+
 }
