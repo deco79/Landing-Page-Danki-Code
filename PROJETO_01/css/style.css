@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
 .clear{
 	clear: both;
@@ -134,7 +134,7 @@ form input[type=submit]{
 	color: rgb(62, 62, 91);
 	font-size: 18px;
 	text-align: justify;
-	display: inline-block;
+	text-align: center;
 
 
 }
@@ -224,9 +224,7 @@ footer h3{
 		width: 90%;
 		height: auto;
 		float: none;
-		max-width: 400px;
-		padding: 20px;
-			
+		max-width: 400px;			
 		
 	}
 	
