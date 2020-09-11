@@ -6,7 +6,7 @@
     box-sizing: border-box;
 } 
 
-.clear{
+.clear{ 
 	clear: both;
 }
 
@@ -84,21 +84,28 @@ form h3{
 	color: rgb(148, 148, 184);
 }
 
+form input[type=text]:focus, form input[type=email]:focus, form input[type=telefone]:focus{
+	outline: 0;
+}
+
 form input[type=text]{
+	padding: 0 10px;
 	width: 410px;
 	height: 70px;
 	font-size: 25px;
 }
 
 form input[type=email]{
+	padding: 0 10px;
 	width: 410px;
 	height: 70px;
 	font-size: 25px;
 }
 
 form input[type=telefone]{
+	padding: 0 10px;
 	width: 410px;
-	height: 70px;
+	height: 70px; 
 	font-size: 25px;
 }
 
@@ -116,27 +123,23 @@ form input[type=submit]{
 
 .medio{
 	text-align: center;
-	margin-top: -5px;
 	background-color: rgb(209, 209, 224);
 }
 
 .medio h2{
-	padding-top: 40px;
+	padding-top: 50px;
 	font-weight: normal;
 	font-size: 30px;
 	color: rgb(62, 62, 91);
 }
 
 .medio p{
-	padding: 30px;
+	padding: 50px;
 	width: 100%;
-	max-width: 768px;
+	height: auto;
+	min-width: 200px;
 	color: rgb(62, 62, 91);
 	font-size: 18px;
-	text-align: justify;
-	text-align: center;
-
-
 }
 
 .seta{
@@ -204,7 +207,7 @@ footer h3{
 	font-size: 25px;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1124px){
 
 	.header1{
 		height: auto;
@@ -221,9 +224,10 @@ footer h3{
 	}
 
 	.lista{
+		margin-top: 40px;
 		width: 90%;
 		height: auto;
-		float: none;
+		float: left;
 		max-width: 400px;			
 		
 	}
@@ -236,5 +240,33 @@ footer h3{
 		
 	}
 
-
 }
+
+@media screen and (max-width: 963px){
+	
+	.center{
+		width: 100%;
+		height: auto;
+		padding: 40px 2%;
+		text-align: center;
+		
+	}
+
+	.lista{
+		margin: 40px auto;
+		width: 100%;
+		height: auto;
+		float: none;
+		max-width: 600px;			
+		
+	}
+	
+	.form{
+	display: block;
+	margin: auto;
+	max-width: 300px;	
+	float: none;
+	width: 60%;
+	height: 100%;
+		
+	}
